@@ -1,0 +1,47 @@
+<%- include ('../partials/header') %>
+
+<div class="container">
+  <div class="jumbotron">
+    <div class="container-fluid">
+      <a href="/cars">ADD A COMMENT</a>
+    </div>
+  </div>
+  <div class="container">
+    <form action="/cars/<%=car._id%>/review" method="POST">
+      <div class="container">
+        <div class="form-group row">
+          <label for="inputName" class="col-sm-2 col-form-label">Title</label>
+          <div class="col-sm-10">
+            <input
+              type="text"
+              class="form-control"
+              name="review[title]"
+              id="inputName"
+            />
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="inputImage" class="col-sm-2 col-form-label"
+            >Content</label
+          >
+          <div class="col-sm-10">
+            <input
+              type="text"
+              class="form-control"
+              name="review[content]"
+              id="inputImage"
+            />
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <div class="col-sm-10">
+            <button type="submit" class="btn btn-primary">add</button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <%- include ('../partials/footer') %>
+</div>

@@ -1,0 +1,84 @@
+.container {
+  background-color: #fff;
+}
+.alert {
+  padding: 5px;
+}
+.navbar {
+  background-color: #003747;
+  font-weight: lighter;
+}
+.center {
+  text-align: center;
+  margin: 1em auto;
+}
+.level1 {
+  width: 45%;
+  margin: 10px auto;
+}
+.container-fluid {
+  margin: 20px auto;
+}
+.row {
+  margin: 10px auto;
+}
+#landingintro {
+  margin: 2em auto;
+  width: 75%;
+  font-size: 10px;
+}
+
+.navbar-brand {
+  color: #abecff;
+}
+a {
+  color: #abecff;
+}
+a:hover {
+  color: #0089b3;
+}
+#map {
+  height: 300px;
+  width: 300px;
+}
+.footer {
+  color: #abecff;
+  background-color: #003747;
+}
+
+.jumbotron {
+  background-image: url(https://i.pinimg.com/originals/00/87/b4/0087b4f11244545759b4981338917ba5.jpg);
+  background-size: cover;
+}
+.jumbotron h1,
+h6 {
+  color: #abecff;
+  font-weight: lighter;
+}
+.jumbotron h6 {
+  display: inline;
+}
+.card {
+  border: 2px solid #003747;
+}
+.btn-info {
+  background-color: #003747;
+  border-color: #003747;
+  padding: 3px;
+  border-radius: 2px;
+}
+.btn-info:hover {
+  background-color: #abecff;
+  color: #003747;
+}
+.review {
+  border: 1px solid #003747;
+}
+.btn .btn-info:active {
+  background-color: #abecff;
+  color: #003747;
+}
+.btn-outline-info {
+  color: #abecff;
+  background-color: #003747;
+}

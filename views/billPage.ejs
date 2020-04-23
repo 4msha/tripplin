@@ -1,0 +1,39 @@
+<%- include ('./partials/header') %>
+<div class="container-fluid p-5">
+  <div class="media border border-dark p-3">
+    <div class="row">
+      <div class="col-12 col-md-6">
+    <div class="media-body">
+      <h5 class="mt-0 mb-1"><%= bill.car.name%></h5>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem magnam
+        ipsum molestiae reprehenderit eum voluptatum beatae amet laborum aliquam
+        ad? Dicta accusamus tenetur ipsum hic deserunt dolorem obcaecati, nam
+        atque.
+      </p>
+    </div>
+    <img
+      src="<%=bill.car.image%>"
+      class="ml-3"
+      style="height:200px;width:200px;"
+    />
+      </div>
+      <div class="col-12 col-md-6 ">
+    <div class="card-header ">Booking Info</div>
+    <div class="card-body">
+      <p class="card-text">
+        <p>Pickup Date -<span class="pull-right"><%=bill.pickup.date%></span></p>
+        <p>Pickup Time -<span class="pull-right"><%=bill.pickup.time%></span></p>
+        <p>Drop Date -  <span class="pull-right"><%=bill.drop.date%></span></p>
+        <p>Drop Time -  <span class="pull-right"><%=bill.drop.time%></span></p>
+        
+       <p> TOTAL AMOUNT <span class="pull-right"><%=bill.billAmount%></span></p>    
+    </div>
+    </div>
+    </div>
+
+</div>
+  </div>
+</div>
+
+<%- include ('./partials/footer') %>

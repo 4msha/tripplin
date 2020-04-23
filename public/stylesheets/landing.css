@@ -1,0 +1,90 @@
+.body {
+  background-color: #fff;
+}
+.my-flex-container {
+  height: 100%;
+}
+
+.flex-item {
+  height: 85vh;
+}
+.my-vertical {
+  height: 33%;
+}
+.my-horizontal {
+  width: 33%;
+}
+.maincontent {
+  width: 66%;
+  vertical-align: center;
+  text-align: center;
+  font-weight: lighter;
+}
+.maincontent h1 {
+  color: #003747;
+}
+.my-horizontal-end {
+  width: 50%;
+}
+.item-4 {
+  background-image: url(https://images.unsplash.com/photo-1543465077-db45d34b88a5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80);
+  background-size: cover;
+}
+.item-1 {
+  background-image: url(https://images.pexels.com/photos/1389339/pexels-photo-1389339.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+  background-size: cover;
+}
+.item-2 {
+  background-image: url(https://images.unsplash.com/photo-1542189412744-bfabf27522ee?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80);
+  background-size: cover;
+}
+.item-3 {
+  background-image: url(https://c8.alamy.com/comp/B97TBE/traffic-jam-taxi-driver-cars-damascus-syria-work-public-transport-B97TBE.jpg);
+  background-size: cover;
+}
+.item-5 {
+  background-image: url(https://cdn.cnn.com/cnnnext/dam/assets/200130092315-market-street-san-francisco-car-free-now-full-169.jpg);
+  background-size: cover;
+}
+.item-6 {
+  background-image: url(https://balkaninsight.com/wp-content/uploads/2020/01/h_54930894-e1580121576616.jpg);
+  background-size: cover;
+}
+.item-7 {
+  background-image: url(https://static.independent.co.uk/s3fs-public/thumbnails/image/2018/03/27/21/uber-cars.jpg);
+  background-size: cover;
+}
+.fixed {
+  background-image: url(https://i.pinimg.com/originals/00/87/b4/0087b4f11244545759b4981338917ba5.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  height: 70vh;
+}
+.about {
+  vertical-align: center;
+  text-align: center;
+}
+.about img {
+  height: 150px;
+  width: 150px;
+}
+.intro {
+  width: 50%;
+  margin: 20px auto;
+  color: #fff;
+  vertical-align: center;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .item-1 {
+    width: 100%;
+  }
+  .item-6 {
+    width: 100%;
+  }
+  .tag-line {
+    font-size: 15px;
+    font-weight: lighter;
+  }
+}

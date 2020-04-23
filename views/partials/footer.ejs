@@ -1,0 +1,41 @@
+<link rel="stylesheet" href="/stylesheets/main.css" />
+<div class="footer p-5">
+    <div class="padding">
+        <div class="row m-3 p-3">
+         <div class="col-xs-12 col-md-4" id="map">
+            
+         </div>
+         <div class="col-xs-12 col-md-4">
+           Contact Us -
+           <p>
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-github"></i>
+            <i class="fab fa-linkedin-in"></i>
+           </p>
+         </div>
+         <div class="col-xs-12 d-none d-md-block col-md-4">
+            <div class="mute">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                 Eius sequi voluptatum quia repellendus, ipsa quae, quaera
+                 t inventore perferendis, autem repellat eos distinctio explic
+                 abo labore consectetur vero fugiat quibusdam eveniet enim.
+            </div>
+         </div>
+        </div>
+    </div>
+</div>
+</div>
+<script>
+    var map;
+    function initMap() {
+      map = new google.maps.Map(document.getElementById('map'), {
+        center: {lat: -34.397, lng: 150.644},
+        zoom: 8
+      });
+    }
+  </script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBXu4L02kKaNxRUxyxXT6HZJl3Q10zebhE&callback=initMap"
+  async defer></script>
+</body>
+</html>

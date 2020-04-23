@@ -1,0 +1,300 @@
+<%- include ('../partials/header') %>
+<div class="container">
+  <div class="row">
+    <div class="col-md-3">
+      <p class="lead">CarRental</p>
+      <div class="accordion" id="accordionExample">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h2 class="mb-0">
+              <button
+                class="btn btn-info"
+                type="button"
+                data-toggle="collapse"
+                data-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                INFO ONE
+              </button>
+            </h2>
+          </div>
+
+          <div
+            id="collapseOne"
+            class="collapse show"
+            aria-labelledby="headingOne"
+            data-parent="#accordionExample"
+          >
+            <div class="card-body">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life
+              accusamus terry richardson ad squid. 3 wolf moon officia aute, non
+              cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingTwo">
+            <h2 class="mb-0">
+              <button
+                class="btn btn-info collapsed"
+                type="button"
+                data-toggle="collapse"
+                data-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                INFO TWO
+              </button>
+            </h2>
+          </div>
+          <div
+            id="collapseTwo"
+            class="collapse"
+            aria-labelledby="headingTwo"
+            data-parent="#accordionExample"
+          >
+            <div class="card-body">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life
+              accusamus terry richardson ad squid. 3 wolf moon officia aute, non
+              cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h2 class="mb-0">
+              <button
+                class="btn btn-info collapsed"
+                type="button"
+                data-toggle="collapse"
+                data-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                INFO THREE
+              </button>
+            </h2>
+          </div>
+          <div
+            id="collapseThree"
+            class="collapse"
+            aria-labelledby="headingThree"
+            data-parent="#accordionExample"
+          >
+            <div class="card-body">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life
+              accusamus terry richardson ad squid. 3 wolf moon officia aute, non
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-9">
+      <div class="thumbnail">
+        <img
+          class="img-responsive"
+          style="height: 100%; width: 100%; object-fit: contain"
+          src="<%= car.image %>"
+        />
+        <div class="caption-full p-2">
+          <h4 class="pull-right"><%=car.costPerHour%>/hours</h4>
+          <h4><a><%=car.name%></a></h4>
+          <p><%= car.description %></p>
+          <p>
+            <em>Submitted By <%= car.carOwner.username %></em>
+          </p>
+          <p class="pull-right">
+            <svg
+              class="bi bi-phone"
+              width="1em"
+              height="1em"
+              viewBox="0 0 16 16"
+              fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M11 1H5a1 1 0 00-1 1v12a1 1 0 001 1h6a1 1 0 001-1V2a1 1 0 00-1-1zM5 0a2 2 0 00-2 2v12a2 2 0 002 2h6a2 2 0 002-2V2a2 2 0 00-2-2H5z"
+                clip-rule="evenodd"
+              />
+              <path
+                fill-rule="evenodd"
+                d="M8 14a1 1 0 100-2 1 1 0 000 2z"
+                clip-rule="evenodd"
+              />
+            </svg>
+            <%=car.carOwner.number%>
+          </p>
+          <p>
+            <svg
+              class="bi bi-briefcase-fill"
+              width="1em"
+              height="1em"
+              viewBox="0 0 16 16"
+              fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M0 12.5A1.5 1.5 0 001.5 14h13a1.5 1.5 0 001.5-1.5V6.85L8.129 8.947a.5.5 0 01-.258 0L0 6.85v5.65z"
+                clip-rule="evenodd"
+              />
+              <path
+                fill-rule="evenodd"
+                d="M0 4.5A1.5 1.5 0 011.5 3h13A1.5 1.5 0 0116 4.5v1.384l-7.614 2.03a1.5 1.5 0 01-.772 0L0 5.884V4.5zm5-2A1.5 1.5 0 016.5 1h3A1.5 1.5 0 0111 2.5V3h-1v-.5a.5.5 0 00-.5-.5h-3a.5.5 0 00-.5.5V3H5v-.5z"
+                clip-rule="evenodd"
+              />
+            </svg>
+            Email- <%=car.carOwner.email%>
+          </p>
+          <p>
+            <svg
+              class="bi bi-house-fill"
+              width="1em"
+              height="1em"
+              viewBox="0 0 16 16"
+              fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M8 3.293l6 6V13.5a1.5 1.5 0 01-1.5 1.5h-9A1.5 1.5 0 012 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5z"
+                clip-rule="evenodd"
+              />
+              <path
+                fill-rule="evenodd"
+                d="M7.293 1.5a1 1 0 011.414 0l6.647 6.646a.5.5 0 01-.708.708L8 2.207 1.354 8.854a.5.5 0 11-.708-.708L7.293 1.5z"
+                clip-rule="evenodd"
+              />
+            </svg>
+
+            PickUp Location- <%=car.carOwner.address%>
+          </p>
+          <% if(currentUser && car.carOwner.equals(currentUser._id)){ %>
+          <a class="btn btn-warning" href="/cars/<%= car._id %>/edit"
+            >Edit Car</a
+          >
+          <form action="/cars/<%=car._id%>?_method=DELETE" method="POST">
+            <button class="btn-danger">DELETE</button>
+          </form>
+          <% } %>
+        </div>
+      </div>
+      <div class="well">
+        <div class="">
+          <a class="btn btn-success" href="/cars/<%= car._id %>/book"
+            >Book Now!</a
+          >
+        </div>
+
+        <hr />
+        <% car.reviews.forEach(function(review){ %>
+        <div class="row review">
+          <div class="col-md-12">
+            <strong><%= review.author.username %></strong>
+            <span class="pull-right">10 days ago</span>
+            <div>
+              <%= review.content %> <% if(currentUser &&
+              review.author.id.equals(currentUser._id)){ %>
+              <form
+                style="display: inline"
+                class="pull-right"
+                action="/cars/<%=car._id%>/review/<%=review._id%>?_method=DELETE"
+                method="POST"
+              >
+                <button class="btn btn-lg " style="color:red;">
+                  <svg
+                    class="bi bi-x-circle-fill"
+                    width="1em"
+                    height="1em"
+                    viewBox="0 0 16 16"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M16 8A8 8 0 110 8a8 8 0 0116 0zm-4.146-3.146a.5.5 0 00-.708-.708L8 7.293 4.854 4.146a.5.5 0 10-.708.708L7.293 8l-3.147 3.146a.5.5 0 00.708.708L8 8.707l3.146 3.147a.5.5 0 00.708-.708L8.707 8l3.147-3.146z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </button>
+                <a
+                  href="/cars/<%=car._id%>/review/<%=review._id%>/edit"
+                  class="btn btn-lg"
+                >
+                  <svg
+                    class="bi bi-pencil-square"
+                    width="1em"
+                    height="1em"
+                    viewBox="0 0 16 16"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M15.502 1.94a.5.5 0 010 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 01.707 0l1.293 1.293zm-1.75 2.456l-2-2L4.939 9.21a.5.5 0 00-.121.196l-.805 2.414a.25.25 0 00.316.316l2.414-.805a.5.5 0 00.196-.12l6.813-6.814z"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      d="M1 13.5A1.5 1.5 0 002.5 15h11a1.5 1.5 0 001.5-1.5v-6a.5.5 0 00-1 0v6a.5.5 0 01-.5.5h-11a.5.5 0 01-.5-.5v-11a.5.5 0 01.5-.5H9a.5.5 0 000-1H2.5A1.5 1.5 0 001 2.5v11z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </a>
+              </form>
+              <% } %>
+            </div>
+          </div>
+        </div>
+        <% }); %>
+        <div class="text-right">
+          <p>
+            <a
+              class="btn btn-info"
+              data-toggle="collapse"
+              href="#collapseExample"
+              role="button"
+              aria-expanded="false"
+              aria-controls="collapseExample"
+            >
+              ADD A REVIEW
+            </a>
+          </p>
+          <div class="collapse" id="collapseExample">
+            <div class="card card-body">
+              <div class="container">
+                <form action="/cars/<%=car._id%>/review" method="POST">
+                  <div class="container">
+                    <div class="form-group row">
+                      <label for="inputImage" class="col-sm-2 col-form-label"
+                        >Content</label
+                      >
+                      <div class="col-sm-10 d-inline">
+                        <input
+                          type="text"
+                          class="form-control d-inline"
+                          name="review[content]"
+                          id="inputImage"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="form-group row">
+                      <div class="col-sm-10">
+                        <button type="submit" class="btn btn-info">
+                          ADD
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%- include ('../partials/footer') %>

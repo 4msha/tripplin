@@ -1,0 +1,94 @@
+<%- include ('../partials/header') %>
+
+<div class="container">
+  <div class="jumbotron">
+    <div class="container-fluid">
+      <a href="/cars/new">ADD NEW CAR</a>
+    </div>
+  </div>
+  <div class="container">
+    <form action="/cars" method="POST">
+      <div class="container">
+        <div class="form-group row">
+          <label for="inputName" class="col-sm-2 col-form-label">Name</label>
+          <div class="col-sm-10">
+            <input
+              type="text"
+              class="form-control"
+              name="car[name]"
+              id="inputName"
+            />
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="inputImage" class="col-sm-2 col-form-label">Image</label>
+          <div class="col-sm-10">
+            <input
+              type="text"
+              class="form-control"
+              name="car[image]"
+              id="inputImage"
+            />
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="inputnoOfSeats" class="col-sm-2 col-form-label"
+            >No of Seats</label
+          >
+          <div class="col-sm-10">
+            <input
+              type="text"
+              class="form-control"
+              name="car[noOfSeats]"
+              id="inputnoOfSeats"
+            />
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="inputcarNo" class="col-sm-2 col-form-label"
+            >Car Number</label
+          >
+          <div class="col-sm-10">
+            <input
+              type="text"
+              class="form-control"
+              name="car[carNo]"
+              id="inputcarNo"
+            />
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="inputcarNo" class="col-sm-2 col-form-label"
+            >Cost Per Hour</label
+          >
+          <div class="col-sm-10">
+            <input
+              type="text"
+              class="form-control"
+              name="car[costPerHour]"
+              id="inputcarNo"
+            />
+          </div>
+        </div>
+        <div class="form-group row">
+          <div class="col-sm-2">*</div>
+          <div class="col-sm-10">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck1" />
+              <label class="form-check-label" for="gridCheck1">
+                I Agree With Term And Conditions
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="form-group row">
+          <div class="col-sm-10">
+            <button type="submit" class="btn btn-primary">Add new Car</button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <%- include ('../partials/footer') %>
+</div>

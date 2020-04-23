@@ -1,0 +1,27 @@
+<%- include ('../partials/header') %>
+<div class="container">
+  <div class="jumbotron">
+    One Step And You Have Your Car
+    <a href="back" class="btn-group-lg btn-danger">Back</a>
+  </div>
+
+  <form action="/cars/<%=car._id%>/book" method="POST">
+    <p>
+      PICKUP TIME AND DATE
+    </p>
+    <p>
+      <input type="date" name="pickup[date]" />
+      <input type="time" name="pickup[time]" />
+    </p>
+    <p>
+      DROP TIME AND DATE
+    </p>
+    <p>
+      <input type="date" name="drop[date]" />
+      <input type="time" name="drop[time]" />
+    </p>
+    <button class="btn-group-lg btn-info">Book</button>
+  </form>
+</div>
+
+<%- include ('../partials/footer') %>
